@@ -2,6 +2,7 @@
 
 html {
   font-family: "Catamaran", "roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -123,6 +124,14 @@ ul {
 
 span {
   display: block;
+}
+
+footer {
+  height: 8rem;
+  background: #1a57db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 400px) {
