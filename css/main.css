@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran&family=Roboto&display=swap");
+
+html {
+  font-family: "Catamaran", "roboto", sans-serif;
+}
+
+.header {
+  background-color: #1a57db;
+  padding: 1rem 2rem 0.5rem 2rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  height: 2.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.non-dropdown {
+  display: none;
+}
+
+.nav-brand,
+.non-dropdown {
+  margin-top: 0.5rem;
+  font-size: larger;
+}
+
+.non-dropdown a {
+  margin-left: 1rem;
+}
+
+.nav-brand a:hover,
+.non-dropdown a:hover {
+  border-bottom: solid 1px #fff;
+}
+
+.dropbtn {
+  background-color: #1a57db;
+  color: #fff;
+  padding: 0.5rem;
+  border: solid 1px #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+.dropbtn:hover {
+  background-color: #0c40af;
+}
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  right: 2rem;
+  top: 3rem;
+  z-index: 1;
+  background-color: #0c40af;
+  border-radius: 5px;
+  border: solid 1px #fff;
+  padding: 0.5rem;
+  box-shadow: 1px 1px 30px #4a4a4a40;
+}
+
+.dropdown-content a {
+  display: flex;
+  padding: 0.5rem;
+}
+
+.dropdown:hover .dropdown-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-content a:hover {
+  border-radius: 5px;
+  background-color: #fff;
+  color: #1a57db;
+}
+
+.header h1 {
+  color: #eee;
+}
+
+h2,
+h3,
+h5,
+p {
+  margin: 2rem;
+}
+
+p,
+span {
+  color: #707070;
+}
+
+.experience,
+.edu-skills,
+ul {
+  display: grid;
+  grid-gap: 1rem;
+  margin: 1rem;
+}
+
+.experience div,
+.education,
+.skills {
+  border-radius: 15px;
+  box-shadow: 1px 1px 30px #4a4a4a40;
+}
+
+.experience div {
+  align-content: center;
+}
+
+span {
+  display: block;
+}
+
+@media screen and (min-width: 400px) {
+  span {
+    float: right;
+  }
+}
+
+@media screen and (min-width: 528px) {
+  .non-dropdown {
+    display: flex;
+  }
+  .dropbtn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 885px) {
+  .experience {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 975px) {
+  .edu-skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
